@@ -1,0 +1,159 @@
+body{
+    color: $font-color;
+    background-color: $background-color;
+    font-family: $font-family;
+}
+
+.black{
+    width:100%;
+    height: 30px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    bottom: 0;
+}
+
+.divisoria-header, .divisoria{
+    background-image: url('../img/linha.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 52px;
+    z-index: 2;
+    position: relative;
+}
+
+.divisoria-header{
+    margin-top: -40px;
+}
+
+.divisoria{
+    margin-top: -30px;
+}
+
+.titulo{
+  background-image: $dourado;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.titulo h1{
+    font-size:5.8rem !important;
+    font-weight: 400;
+}
+
+.titulo h1 span{
+    display: block;
+}
+
+.subtitulo{
+    background-image: $dourado;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.thumb{
+    width: 60%; 
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 60%;
+    background: $dourado;
+    padding: 10px 20px;
+    color: $background-color;
+    font-size: 1.3rem;
+    font-weight: 600 ;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    color: $background-color ;
+    opacity: 0.9;
+}
+
+.trabalhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 2000px) {
+    .divisoria-header, .divisoria{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1999px) {
+    .divisoria-header, .divisoria{
+        height: 52px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .trabalhos{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .titulo h1{ 
+        font-size:3.8rem !important;
+    }
+    .subtitulo{
+        font-size: 1.5rem;
+    }
+    .trabalhos{
+        p{
+            height: 200px;
+            overflow-y: scroll;
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .trabalhos{
+        flex-direction: column;
+        margin-bottom: 10px;
+        p{
+            margin-top: 20px;
+            height: 100%;
+        }
+        .order{
+            order: -1 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .titulo h1{ 
+        font-size:2.8rem !important;
+    }
+    .subtitulo{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .titulo h1{ 
+        font-size:1.8rem !important;
+    }
+}

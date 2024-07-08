@@ -1,0 +1,89 @@
+header{
+    .nav-item a{
+        color: $font-color;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .navbar-brand{
+        width: 25%;
+        display: flex;
+        justify-content: end;
+    }
+    .logo{
+        img{
+            max-width: 100%;
+            width: 30%;
+        }
+    }
+    .flex-header{
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    //Mobile
+    .navbar-toggler{
+        background: $dourado;
+        .navbar-toggler-icon{
+            background-image: url('../img/menu.png');
+        }
+    }
+    .offcanvas{
+        background-color: $background-color;
+        .btn-close{
+            background-color: $font-color;
+        }
+        .nav-item{
+            .nav-link:hover{
+                color: $font-color;
+            }
+        }
+    }
+    .menu-mobile{
+        display: none;
+    }
+    
+    .nav-link:focus, .nav-link:hover{
+        color: $font-color;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 992px) {
+        .logo-desk{
+            display: none;
+        }
+        .navbar-expand-lg .navbar-collapse{
+            display: none !important;
+        }
+        .menu-mobile{
+            display: block;
+            border-bottom: 1px solid;
+            border-image: $borda-dourada;
+            background-color: $background-color;
+            .navbar-brand{
+                justify-content: flex-start;
+            }
+        }
+        .titulo{
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 764px){
+        .logo img {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 570px){
+        .logo img {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 376px){
+        .logo img {
+            width: 80%;
+        }
+    }
+}   

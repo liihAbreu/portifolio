@@ -1,0 +1,50 @@
+footer{
+    margin-top: 50px;
+    padding-bottom: 15px;
+    .footer{
+        border-top: 1px solid;
+        border-image: $borda-dourada;
+        .logo-footer{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            img{
+                width: 4%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        margin-top: 30px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer{
+        .footer{
+            .logo-footer{
+                img{
+                    width: 6%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    footer{
+        .footer{
+            .logo-footer{
+                img{
+                    width: 12%;
+                }
+            }
+        }
+    }
+}
