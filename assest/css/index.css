@@ -144,6 +144,9 @@ body {
   .subtitulo {
     text-align: center;
   }
+  .header-home, .header-design, .header-front, .header-formacao, .header-contato {
+    height: 400px !important;
+  }
 }
 @media screen and (max-width: 375px) {
   .titulo h1 {
@@ -271,6 +274,7 @@ footer .footer .logo-footer img {
   display: block;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .resumo-home {
@@ -301,13 +305,6 @@ footer .footer .logo-footer img {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 992px) {
-  .resumo-home p {
-    font-size: 0.8rem;
-    height: 300px;
-    overflow-y: scroll;
-  }
-}
 @media screen and (max-width: 768px) {
   .resumo-home {
     background: none;
@@ -325,6 +322,7 @@ footer .footer .logo-footer img {
   display: block;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .sites, .livros, .lojas, .festas {
@@ -352,6 +350,7 @@ footer .footer .logo-footer img {
   display: block;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .skills {
@@ -457,6 +456,7 @@ footer .footer .logo-footer img {
   display: block;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .cursos {
@@ -476,6 +476,7 @@ footer .footer .logo-footer img {
   display: block;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .contato {

@@ -150,6 +150,9 @@ body{
     .subtitulo{
         text-align: center;
     }
+    .header-home, .header-design, .header-front, .header-formacao, .header-contato{
+        height: 400px !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
